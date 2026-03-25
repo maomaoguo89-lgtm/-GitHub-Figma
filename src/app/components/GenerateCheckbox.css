@@ -1,0 +1,94 @@
+/* Hide the default checkbox */
+.generate-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.generate-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.generate-checkbox-container input:disabled ~ .generate-checkmark {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.generate-checkbox-container input:disabled {
+  cursor: not-allowed;
+}
+
+/* Create a custom checkbox */
+.generate-checkmark {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  background: black;
+  border-radius: 50%;
+  transition: all 0.7s;
+  --spread: 12px;
+  flex-shrink: 0;
+}
+
+/* When the checkbox is checked, add rainbow glow effect */
+.generate-checkbox-container input:checked ~ .generate-checkmark {
+  background: black;
+  box-shadow: 
+    -6px -6px var(--spread) 0px #5B51D8, 
+    0 -6px var(--spread) 0px #833AB4, 
+    6px -6px var(--spread) 0px #E1306C, 
+    6px 0 var(--spread) 0px #FD1D1D, 
+    6px 6px var(--spread) 0px #F77737, 
+    0 6px var(--spread) 0px #FCAF45, 
+    -6px 6px var(--spread) 0px #FFDC80;
+  animation: rainbow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes rainbow-pulse {
+  0%, 100% {
+    --spread: 12px;
+  }
+  50% {
+    --spread: 16px;
+  }
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.generate-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.generate-checkbox-container input:checked ~ .generate-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.generate-checkbox-container .generate-checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid #f0f0f0;
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg);
+}
+
+.generate-label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.generate-checkbox-container input:checked ~ .generate-label {
+  color: #ffffff;
+}

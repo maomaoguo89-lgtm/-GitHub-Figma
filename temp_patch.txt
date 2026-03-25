@@ -1,0 +1,37 @@
+  // 确认创建资产
+  const handleConfirmAsset = useCallback((data: {
+    name: string;
+    category: any;
+    description: string;
+    saveType: 'asset' | 'template';
+  }) => {
+    const selectedNodesData = nodes.filter(n => selectedNodes.includes(n.id));
+    const selectedConnections = connections.filter(
+      conn => selectedNodes.includes(conn.from) && selectedNodes.includes(conn.to)
+    );
+    
+    if (data.saveType === 'template') {
+      // 保存为模板
+      addTemplate({
+        name: data.name,
+        description: data.description,
+        nodes: selectedNodesData,
+        connections: selectedConnections,
+        groups: [],
+      });
+      setShowAssetDialog(false);
+      alert(`模板 "${data.name}" 已保存！`);
+    } else {
+      // 保存为资产
+      addAsset({
+        name: data.name,
+        category: data.category,
+        description: data.description,
+        nodes: selectedNodesData,
+        connections: selectedConnections,
+        groups: [],
+      });
+      setShowAssetDialog(false);
+      alert(`资产 "${data.name}" 已保存！`);
+    }
+  }, [selectedNodes, nodes, connections, addAsset, addTemplate]);

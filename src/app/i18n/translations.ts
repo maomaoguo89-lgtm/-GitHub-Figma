@@ -1,0 +1,361 @@
+export const translations = {
+  zh: {
+    // Navigation
+    nav: {
+      imIooi: "I'm iooi",
+      iooiSpace: "iooi空间",
+      workspace: "工作空间",
+      challenges: "挑战赛",
+      earnIoos: "赚取 ioos",
+      pricing: "价格方案",
+      enterCanvas: "进入画板",
+      profile: "个人主页",
+      settings: "设置",
+      logout: "登出",
+    },
+    
+    // Home Page
+    home: {
+      title: "iooi - 无限画板",
+      heroTitle1: "跑狗传, 马上故事赢1万",
+      heroSubtitle1: "iooiTV Arena 36 小时动画黑客松 • 现已开放报名",
+      heroTitle2: "进化 • 碰撞 • 逆向",
+      heroSubtitle2: "iooi × SXSW 2026 全球狂欢计划正式开启",
+      quickStart: "快速开始",
+      createNew: "创建新项目",
+      newCanvas: "新建画布",
+      newVideo: "新建视频",
+      newCollage: "新建拼贴",
+      moreTools: "更多工具",
+      recentProjects: "最近项目",
+      viewAll: "查看全部",
+      templates: "模板",
+      aiTools: "AI 工具",
+      videoGenerator: "视频生成器",
+      imageEnhancer: "图像增强器",
+      textToImage: "文字转图像",
+      styleTransfer: "风格迁移",
+    },
+    
+    // Workspace Page
+    workspace: {
+      title: "工作空间",
+      newProject: "新建画板",
+      newBlankCanvas: "新建空白画板",
+      allProjects: "全部项目",
+      recentEdit: "最近编辑",
+      createProject: "新建项目",
+      projectName: "项目名称",
+      enterName: "输入项目名称...",
+      cancel: "取消",
+      create: "创建并进入",
+      confirmDelete: "删除项目",
+      deleteMessage: "您确定要删除此画板吗？\n删除后该项目的所有数据将无法找回。",
+      delete: "确认删除",
+      edited: "编辑于",
+      untitled: "Untitled Project",
+      justNow: "刚刚",
+    },
+    
+    // iooi TV Page
+    iooiTV: {
+      title: "iooi TV",
+      search: "搜索作品...",
+      filter: "筛选",
+      categories: {
+        all: "全部",
+        featured: "精选发布",
+        commercial: "电视广告",
+        animation: "动画",
+        narrative: "叙事短片",
+        musicVideo: "MV",
+        creative: "创意",
+        tutorial: "教程",
+        other: "其他",
+      },
+    },
+    
+    // Canvas Page
+    canvas: {
+      title: "无限画板",
+      addNode: "添加节点",
+      addResource: "添加资源",
+      tools: {
+        select: "选择",
+        hand: "拖拽",
+        text: "文本",
+        textDesc: "脚本、广告词、品牌文案",
+        image: "图片",
+        video: "视频",
+        audio: "音频",
+        shapes: "形状",
+        pen: "画笔",
+      },
+      actions: {
+        undo: "撤销",
+        redo: "重做",
+        zoom: "缩放",
+        save: "保存",
+        export: "导出",
+        share: "分享",
+        settings: "设置",
+      },
+      nodes: {
+        text: "文本节点",
+        image: "图片节点",
+        video: "视频节点",
+        audio: "音频节点",
+        generate: "生成",
+        upload: "上传",
+        uploadDesc: "支持200MB内所有媒体与文档",
+        placeholder: {
+          text: "输入文本内容...",
+          description: "添加描述...",
+          title: "标题",
+        },
+        status: {
+          idle: "空闲",
+          generating: "生成中...",
+          done: "完成",
+        },
+      },
+    },
+    
+    // Common
+    common: {
+      loading: "加载中...",
+      save: "保存",
+      cancel: "取消",
+      delete: "删除",
+      edit: "编辑",
+      create: "创建",
+      upload: "上传",
+      download: "下载",
+      share: "分享",
+      close: "关闭",
+      confirm: "确认",
+      back: "返回",
+      next: "下一步",
+      previous: "上一步",
+      search: "搜索",
+      filter: "筛选",
+      sort: "排序",
+      more: "更多",
+    },
+    
+    // User Menu
+    user: {
+      credits: "积分",
+      vipMember: "VIP会员",
+      profile: "个人主页",
+      settings: "设置",
+      apiConfig: "API配置",
+      logout: "登出",
+      upgrade: "升级会员",
+    },
+    
+    // Language
+    language: {
+      chinese: "中文",
+      english: "English",
+    },
+
+    // Settings Page
+    settings: {
+      general: "通用",
+      apiKeys: "密钥",
+      appearance: "外观",
+      pricing: "价格",
+      experiment: "实验",
+      about: "关于",
+      apiDescription: "配置 AI 服务商的 API 密钥",
+      inputApiKey: "输入 API Key",
+      selectModel: "选择模型",
+      save: "保存",
+      saved: "设置已保存",
+      needHelp: "我该选哪个？",
+      howToGet: "我该怎么弄？",
+    },
+  },
+  
+  en: {
+    // Navigation
+    nav: {
+      imIooi: "I'm iooi",
+      iooiSpace: "iooi Space",
+      workspace: "Workspace",
+      challenges: "Challenges",
+      earnIoos: "Earn ioos",
+      pricing: "Pricing",
+      enterCanvas: "Enter Canvas",
+      profile: "Profile",
+      settings: "Settings",
+      logout: "Logout",
+    },
+    
+    // Home Page
+    home: {
+      title: "iooi - Infinite Canvas",
+      heroTitle1: "Dog Run Legend, Win 10K Now",
+      heroSubtitle1: "iooiTV Arena 36-Hour Animation Hackathon • Now Open for Registration",
+      heroTitle2: "Evolve • Collide • Reverse",
+      heroSubtitle2: "iooi × SXSW 2026 Global Carnival Officially Launched",
+      quickStart: "Quick Start",
+      createNew: "Create New",
+      newCanvas: "New Canvas",
+      newVideo: "New Video",
+      newCollage: "New Collage",
+      moreTools: "More Tools",
+      recentProjects: "Recent Projects",
+      viewAll: "View All",
+      templates: "Templates",
+      aiTools: "AI Tools",
+      videoGenerator: "Video Generator",
+      imageEnhancer: "Image Enhancer",
+      textToImage: "Text to Image",
+      styleTransfer: "Style Transfer",
+    },
+    
+    // Workspace Page
+    workspace: {
+      title: "Workspace",
+      newProject: "New Canvas",
+      newBlankCanvas: "New Blank Canvas",
+      allProjects: "All Projects",
+      recentEdit: "Recently Edited",
+      createProject: "Create New Project",
+      projectName: "Project Name",
+      enterName: "Enter project name...",
+      cancel: "Cancel",
+      create: "Create and Enter",
+      confirmDelete: "Delete Project",
+      deleteMessage: "Are you sure you want to delete this canvas?\nAll data of this project will be lost after deletion.",
+      delete: "Confirm Delete",
+      edited: "Edited",
+      untitled: "Untitled Project",
+      justNow: "Just Now",
+    },
+    
+    // iooi TV Page
+    iooiTV: {
+      title: "iooi TV",
+      search: "Search works...",
+      filter: "Filter",
+      categories: {
+        all: "All",
+        featured: "Featured",
+        commercial: "TV Commercial",
+        animation: "Animation",
+        narrative: "Narrative",
+        musicVideo: "Music Video",
+        creative: "Creative",
+        tutorial: "Tutorial",
+        other: "Other",
+      },
+    },
+    
+    // Canvas Page
+    canvas: {
+      title: "Infinite Canvas",
+      addNode: "Add Node",
+      addResource: "Add Resource",
+      tools: {
+        select: "Select",
+        hand: "Hand",
+        text: "Text",
+        textDesc: "Scripts, ad copy, brand copy",
+        image: "Image",
+        video: "Video",
+        audio: "Audio",
+        shapes: "Shapes",
+        pen: "Pen",
+      },
+      actions: {
+        undo: "Undo",
+        redo: "Redo",
+        zoom: "Zoom",
+        save: "Save",
+        export: "Export",
+        share: "Share",
+        settings: "Settings",
+      },
+      nodes: {
+        text: "Text Node",
+        image: "Image Node",
+        video: "Video Node",
+        audio: "Audio Node",
+        generate: "Generate",
+        upload: "Upload",
+        uploadDesc: "Supports all media & documents within 200MB",
+        placeholder: {
+          text: "Enter text content...",
+          description: "Add description...",
+          title: "Title",
+        },
+        status: {
+          idle: "Idle",
+          generating: "Generating...",
+          done: "Done",
+        },
+      },
+    },
+    
+    // Common
+    common: {
+      loading: "Loading...",
+      save: "Save",
+      cancel: "Cancel",
+      delete: "Delete",
+      edit: "Edit",
+      create: "Create",
+      upload: "Upload",
+      download: "Download",
+      share: "Share",
+      close: "Close",
+      confirm: "Confirm",
+      back: "Back",
+      next: "Next",
+      previous: "Previous",
+      search: "Search",
+      filter: "Filter",
+      sort: "Sort",
+      more: "More",
+    },
+    
+    // User Menu
+    user: {
+      credits: "Credits",
+      vipMember: "VIP Member",
+      profile: "Profile",
+      settings: "Settings",
+      apiConfig: "API Config",
+      logout: "Logout",
+      upgrade: "Upgrade",
+    },
+    
+    // Language
+    language: {
+      chinese: "中文",
+      english: "English",
+    },
+
+    // Settings Page
+    settings: {
+      general: "General",
+      apiKeys: "API Keys",
+      appearance: "Appearance",
+      pricing: "Pricing",
+      experiment: "Experiment",
+      about: "About",
+      apiDescription: "Configure API keys for AI service providers",
+      inputApiKey: "Enter API Key",
+      selectModel: "Select Model",
+      save: "Save",
+      saved: "Settings saved",
+      needHelp: "Which one should I choose?",
+      howToGet: "How do I get this?",
+    },
+  },
+};
+
+export type TranslationKeys = typeof translations.zh;
